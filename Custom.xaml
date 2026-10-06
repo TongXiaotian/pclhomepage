@@ -1,0 +1,76 @@
+<!-- ==================== 欢迎卡片 ==================== -->
+<local:MyCard Title="欢迎" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center"
+                   Text="欢迎回来 {user}！" />
+    </StackPanel>
+</local:MyCard>
+
+<!-- ==================== 公告卡片 ==================== -->
+<local:MyCard Title="公告" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" FontSize="14" Foreground="#888888" HorizontalAlignment="Center"
+                   Text="暂无公告" />
+    </StackPanel>
+</local:MyCard>
+
+<!-- ==================== 我的小小世界卡片 ==================== -->
+<local:MyCard Title="我的小小世界" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="14" Foreground="#888888"
+                   Text="这里是我的小小世界，以后慢慢填满它。" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
+            <local:MyButton Margin="0,0,10,0" Height="35" Padding="20,0,20,0"
+                            ColorType="Highlight"
+                            Text="我的小小世界"
+                            ToolTip="点击打开我的小小世界"
+                            EventType="打开网页"
+                            EventData="https://tongxiaotian.github.io/MyLittleWorld/" />
+            <local:MyButton Height="35" Padding="20,0,20,0"
+                            ColorType="Highlight"
+                            Text="下棋模拟器"
+                            ToolTip="点击打开下棋模拟器"
+                            EventType="打开网页"
+                            EventData="https://tongxiaotian.github.io/Chess-Simulator/" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<!-- ==================== 作者卡片（默认折叠） ==================== -->
+<local:MyCard Title="作者" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Center"
+                   Text="本主页由 通小添 制作" />
+        <TextBlock TextWrapping="Wrap" Margin="0,10,0,0" FontSize="14" Foreground="#888888" HorizontalAlignment="Center"
+                   Text="联系方式：QQ 3150667553" />
+        <TextBlock TextWrapping="Wrap" Margin="0,5,0,0" FontSize="14" Foreground="#888888" HorizontalAlignment="Center"
+                   Text="感谢使用！" />
+
+        <local:MyButton Margin="0,15,0,0" Height="35" HorizontalAlignment="Center" Padding="20,0,20,0"
+                        ColorType="Highlight"
+                        Text="第二个作者"
+                        ToolTip="deepseek"
+                        EventType="打开网页"
+                        EventData="https://www.deepseek.com/" />
+    </StackPanel>
+</local:MyCard>
+
+<!-- ==================== 里面有东西卡片（默认折叠） ==================== -->
+<local:MyCard Title="里面有东西" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="16">
+            <Run Foreground="#FF0000" Text="你"/>
+            <Run Foreground="#FFA500" Text="还"/>
+            <Run Foreground="#FFFF00" Text="别"/>
+            <Run Foreground="#00CC00" Text="说"/>
+            <Run Foreground="#0000FF" Text="还"/>
+            <Run Foreground="#4B0082" Text="真"/>
+            <Run Foreground="#800080" Text="有"/>
+            <Run Foreground="#FF0000" Text="东"/>
+            <Run Foreground="#FFA500" Text="西"/>
+        </TextBlock>
+    </StackPanel>
+</local:MyCard>
+
+<!-- ==================== 其他卡片以后加在这里 ==================== -->
